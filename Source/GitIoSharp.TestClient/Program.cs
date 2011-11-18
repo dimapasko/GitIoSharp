@@ -6,7 +6,10 @@ namespace GitIoSharp.TestClient
 	{
 		static void Main(string[] args)
 		{
-			var r = new GitIo().Shorten(new Uri("http://github.com/dimapasko"));
+			var gitIo = new GitIo();
+			Console.WriteLine(gitIo.Shorten(new Uri("http://github.com/dimapasko")));
+			Console.WriteLine(gitIo.Shorten(new Uri("https://github.com/csharpus"), "csharpus"));
+			Console.ReadLine();
 		}
 	}
 }

@@ -47,7 +47,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GitIoRx\GitIoSharp.csproj">
+    <ProjectReference Include="..\GitIoSharp\GitIoSharp.csproj">
       <Project>{260A682F-DE57-4149-9D2D-0ADC66BABBBC}</Project>
       <Name>GitIoSharp</Name>
     </ProjectReference>
