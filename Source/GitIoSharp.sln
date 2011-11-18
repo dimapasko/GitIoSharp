@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitIoSharp", "GitIoRx\GitIoSharp.csproj", "{260A682F-DE57-4149-9D2D-0ADC66BABBBC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitIoSharp", "GitIoSharp\GitIoSharp.csproj", "{260A682F-DE57-4149-9D2D-0ADC66BABBBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitIoSharp.TestClient", "GitIoRx.TestClient\GitIoSharp.TestClient.csproj", "{68A9C6BB-253E-4D11-86FC-F80C453FA42D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitIoSharp.TestClient", "GitIoSharp.TestClient\GitIoSharp.TestClient.csproj", "{68A9C6BB-253E-4D11-86FC-F80C453FA42D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
