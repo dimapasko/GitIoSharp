@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GetIoService.cs" />
+    <Compile Include="GitIoException.cs" />
+    <Compile Include="GitIoService.cs" />
     <Compile Include="GitIo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

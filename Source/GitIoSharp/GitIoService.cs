@@ -17,9 +17,19 @@ namespace GitIoSharp
 			{
 				os.Write(bytes, 0, bytes.Length);
 			}
-			var response = request.GetResponse();
-			
-			return new Uri(response.Headers[HttpResponseHeader.Location]);
+			try
+			{
+				var response = (HttpWebResponse)request.GetResponse();
+
+				if (response.StatusCode != HttpStatusCode.Created)
+					throw new GitIoException(response.StatusDescription);
+
+				return new Uri(response.Headers[HttpResponseHeader.Location]);	
+			}
+			catch (WebException e)
+			{
+				throw new GitIoException(e.Message);
+			}
 		}
 	}
 }
