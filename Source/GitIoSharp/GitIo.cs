@@ -4,11 +4,11 @@ namespace GitIoSharp
 {
 	public class GitIo
 	{
-		private readonly GetIoService _gitIoService;
+		private readonly GitIoService _gitIoService;
 
 		public GitIo()
 		{
-			_gitIoService = new GetIoService();
+			_gitIoService = new GitIoService();
 		}
 
 		public Uri Shorten(Uri url)
